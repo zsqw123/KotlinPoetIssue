@@ -40,7 +40,7 @@ fun longReturn(packageName: String): FileSpec {
         FunSpec.builder("ccc")
             .addModifiers(KModifier.PUBLIC)
             .returns(ClassName.bestGuess("org.example.$myLongClass"))
-            .addStatement("val a = 888")
+            .addStatement("val a = \"Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong String\"")
             .addStatement("return $myLongClass()")
             .build()
     )
